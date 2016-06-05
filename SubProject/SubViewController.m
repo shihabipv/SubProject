@@ -28,4 +28,8 @@
     return 3.14;
 }
 
+- (NSString*) printSomething{
+    return @"Working from SubProject...";
+}
+
 @end

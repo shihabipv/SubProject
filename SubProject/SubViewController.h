@@ -12,5 +12,7 @@
 
 - (float) valueOfPi;
 
+- (NSString*) printSomething;
+
 @end
 
