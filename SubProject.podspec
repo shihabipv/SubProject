@@ -12,11 +12,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   
   s.name             = 'SubProject'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'SubProject is a sample project for MainProject for testing pods.'
-  s.author           = { 'Shihabul Islam' => 'shihabul@ipvisionsoft.com' }
+  s.author           = { 'Md. Shihabul Islam' => 'shihabul@ipvisionsoft.com' }
   
   s.source           = { :git => 'https://github.com/shihabipv/SubProject.git', :tag => "#{s.version}"}
+
 
   s.homepage         = 'https://github.com/shihabipv/SubProject'
 
@@ -24,7 +25,8 @@ Pod::Spec.new do |s|
   
   s.framework = "UIKit"
 
-  s.source_files  = "SubProject/*.{h,m}"
+  s.source_files  = "SubProject/*.{h,m}", "SubProject/**/*.{h,m}"
+  s.public_header_files = "SubProject/*.h"
 
   #s.resource = "SubProject/*.{storyboard}"
 
